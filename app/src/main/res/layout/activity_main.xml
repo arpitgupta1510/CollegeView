@@ -94,18 +94,6 @@
                 android:text="Submit Otp"
                 app:cornerRadius="10dp" />
 
-            <TextView
-                android:id="@+id/textView2"
-                android:layout_width="190dp"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:clickable="true"
-                android:gravity="center"
-                android:text="Already sign in?..."
-                android:textSize="18sp"
-                android:textStyle="bold|italic"
-                android:focusable="true" />
-
         </LinearLayout>
 
     </androidx.cardview.widget.CardView>

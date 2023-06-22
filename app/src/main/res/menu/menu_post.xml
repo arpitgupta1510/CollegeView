@@ -13,4 +13,5 @@
     <item
         android:id="@+id/deletePosts"
         android:title="Delete Posts" />
+
 </menu>

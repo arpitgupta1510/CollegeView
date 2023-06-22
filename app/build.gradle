@@ -7,14 +7,14 @@ plugins {
 }
 
 android {
-    namespace 'com.example.clg'
+    namespace 'com.CollegeCircle.clg'
     compileSdk 33
 
     buildFeatures{
         viewBinding true
     }
     defaultConfig {
-        applicationId "com.example.clg"
+        applicationId "com.CollegeCircle.clg"
         minSdk 21
         targetSdk 33
         versionCode 1

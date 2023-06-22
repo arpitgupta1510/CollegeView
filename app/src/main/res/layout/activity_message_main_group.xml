@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/img"
+    android:background="?attr/background"
     android:focusable="true"
     tools:context=".Activities.MessageActivityMainGroup"
     tools:menu="@menu/message">
@@ -97,7 +97,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:layout_marginBottom="8dp"
-        android:background="@color/white"
+        android:background="?attr/colorPrimary"
         app:cardCornerRadius="10dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/mainGroupMsgSentBtn"
@@ -106,7 +106,7 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="@color/white"
+            android:background="?attr/colorPrimary"
             android:orientation="horizontal">
 
             <EditText
@@ -116,7 +116,7 @@
                 android:layout_marginStart="6dp"
                 android:layout_marginTop="2dp"
                 android:layout_weight="1"
-                android:background="@color/white"
+                android:background="?attr/colorPrimary"
                 android:ems="10"
                 android:hint="Type message here.."
                 android:inputType="textCapSentences|textMultiLine"

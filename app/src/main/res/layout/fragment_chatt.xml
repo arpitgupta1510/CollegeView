@@ -4,16 +4,17 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="?attr/backgroundColor"
     tools:context=".Fragments.ChattFragment">
+
     <View
         android:id="@+id/mainCollegeView"
         android:layout_width="0dp"
         android:layout_height="65dp"
         android:background="?attr/backgroundColor"
-        app:layout_constraintBottom_toTopOf="@+id/friendsView"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"/>
+        app:layout_constraintTop_toBottomOf="@+id/textView6" />
 
 
 
@@ -47,18 +48,19 @@
         android:textSize="18sp"
         android:textStyle="bold"
         app:layout_constraintStart_toEndOf="@+id/MainClgiamge"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="@+id/mainCollegeView" />
 
     <TextView
-        android:id="@+id/mainCollegeId"
+        android:id="@+id/mainCollegeLastMsg"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="14dp"
-        android:text="College Id"
+        android:text=""
         android:textSize="14sp"
         app:layout_constraintBottom_toBottomOf="@+id/mainCollegeView"
         app:layout_constraintStart_toEndOf="@+id/MainClgiamge"
         app:layout_constraintTop_toBottomOf="@+id/mainCollegeName" />
+
 
     <View
         android:id="@+id/view10"
@@ -74,13 +76,15 @@
         android:id="@+id/friendsView"
         android:layout_width="0dp"
         android:layout_height="0dp"
-        app:layout_constraintBottom_toBottomOf="parent"
         android:background="?attr/backgroundColor"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/mainCollegeView"
+        app:layout_constraintTop_toBottomOf="@+id/textView7"
         app:layout_constraintVertical_bias="0.816"
         tools:listitem="@layout/row_table" />
+
     <View
         android:elevation="100dp"
         android:id="@+id/contactView"
@@ -107,7 +111,36 @@
         app:layout_constraintTop_toTopOf="@+id/contactView"
         app:layout_constraintVertical_bias="0.485" />
 
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Main Group"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_marginTop="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Friends"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/view10"
+        app:layout_constraintTop_toBottomOf="@+id/mainCollegeView" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="15dp"
+        android:src="@drawable/ic_baseline_push_pin_24"
+        app:layout_constraintBottom_toBottomOf="@+id/mainCollegeView"
+        app:layout_constraintEnd_toEndOf="@+id/mainCollegeView"
+        app:layout_constraintTop_toTopOf="@+id/mainCollegeView" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

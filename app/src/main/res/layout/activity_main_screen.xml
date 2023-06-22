@@ -4,19 +4,15 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/drawerLayout"
     android:layout_width="match_parent"
-    android:background="@color/white"
     android:layout_height="match_parent"
     tools:context=".Activities.MainScreen">
 
-    <androidx.constraintlayout.widget.ConstraintLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent">
 
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/clgShowView"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:background="@color/white"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:background="?attr/backgroundColor"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
@@ -27,7 +23,6 @@
 
 
 
-    </androidx.constraintlayout.widget.ConstraintLayout>
 
     <com.google.android.material.navigation.NavigationView
         android:id="@+id/nav_View"

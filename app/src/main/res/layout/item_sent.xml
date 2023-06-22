@@ -101,7 +101,8 @@
             android:textSize="10sp"
             android:text=""
             app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toStartOf="@id/sendMsg"
+           app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginEnd="25dp"
             tools:ignore="RtlSymmetry,SmallSp" />
 
         <ImageView
@@ -114,6 +115,19 @@
             android:paddingRight="4dp"
             android:paddingBottom="1dp"
             android:src="@drawable/ic_baseline_data_usage_24"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:tint="@color/white" />
+        <ImageView
+            android:id="@+id/sendMsgDone"
+            android:layout_width="18dp"
+            android:layout_height="15dp"
+            android:layout_gravity="bottom|right"
+            android:layout_marginEnd="5dp"
+            android:paddingLeft="4dp"
+            android:paddingRight="4dp"
+            android:visibility="gone"
+            android:src="@drawable/ic_baseline_done_outline_24"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:tint="@color/white" />

@@ -20,27 +20,32 @@
         app:layout_constraintVertical_bias="0.0"
         tools:listitem="@layout/post" />
 
+
     <View
-        android:id="@+id/addPostView"
+        android:elevation="100dp"
+        android:id="@+id/uploadPostBtn"
         android:layout_width="58dp"
         android:layout_height="58dp"
+        android:background="@drawable/circle"
+        android:backgroundTint="?attr/colorPrimaryVariant"
         android:layout_marginEnd="26dp"
-        android:layout_marginBottom="44dp"
-        app:layout_constraintBottom_toBottomOf="@+id/postsView"
-        app:layout_constraintEnd_toEndOf="@+id/postsView" />
-
-
+        android:layout_marginBottom="34dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
     <ImageView
-        android:id="@+id/addPostBox"
-        android:layout_width="25dp"
-        android:layout_height="30dp"
-        android:src="@android:drawable/stat_notify_chat"
-        app:layout_constraintBottom_toBottomOf="@+id/addPostView"
-        app:layout_constraintEnd_toEndOf="@+id/addPostView"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="@+id/addPostView"
-        app:layout_constraintTop_toTopOf="@+id/addPostView"
-        app:layout_constraintVertical_bias="1.0" />
+        android:elevation="100dp"
+        android:id="@+id/contactBox"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@drawable/posts"
+        app:layout_constraintBottom_toBottomOf="@+id/uploadPostBtn"
+        app:layout_constraintEnd_toEndOf="@+id/uploadPostBtn"
+        app:layout_constraintHorizontal_bias="0.457"
+        app:layout_constraintStart_toStartOf="@+id/uploadPostBtn"
+        app:layout_constraintTop_toTopOf="@+id/uploadPostBtn"
+        app:layout_constraintVertical_bias="0.485"
+         />
+
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

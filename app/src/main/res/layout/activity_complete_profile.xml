@@ -46,11 +46,12 @@
             android:layout_height="wrap_content"
             android:orientation="horizontal">
 
-            <TextView
+            <EditText
                 android:id="@+id/completeProfilePhone"
-                android:layout_width="match_parent"
+                android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
+                android:inputType="text"
                 android:gravity="center_vertical"
                 android:hint="PhoneNo"
                 android:paddingStart="16dp"
@@ -166,13 +167,14 @@
             android:layout_height="wrap_content"
             android:orientation="horizontal">
 
-            <TextView
+            <EditText
                 android:id="@+id/completeProfileCity"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:gravity="center_vertical"
                 android:hint="City "
+                android:inputType="text"
                 android:paddingStart="16dp"
                 android:textSize="18dp"
                 android:textStyle="bold" />

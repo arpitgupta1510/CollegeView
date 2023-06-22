@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:background="?attr/backgroundColor"
     android:layout_height="wrap_content"
-    android:padding="4dp">
+    android:padding="10dp">
 
     <androidx.cardview.widget.CardView
         android:id="@+id/notificationCardView"
@@ -67,7 +67,6 @@
                 android:paddingBottom="4dp"
                 android:text="TextView"
                 android:textSize="16sp"
-                android:textStyle="bold"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toEndOf="@+id/notificationSenderImage"
                 app:layout_constraintTop_toBottomOf="@+id/notificationSenderName" />

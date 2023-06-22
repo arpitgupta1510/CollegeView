@@ -14,8 +14,8 @@
     <color name="green">#47B84C</color>
     <color name="skyBlue">#67B6CD</color>
     <color name="darkBackground">#56738A</color>
-    <color name="ltBlack">#2D4659</color>
-    <color name="vltBlack">#525868</color>
+    <color name="ltBlack">#111920</color>
+    <color name="vltBlack">#363C4A</color>
     <color name="tb_media_picker_accent">#525868</color>
     <color name="grey">#C9CBD6</color>
     <color name="keyboardBackGround">#C9CBD6</color>
@@ -24,5 +24,6 @@
     <color name="colorE">#c4c4c4</color>
     <color name="replyBackground">#DADADA</color>
     <color name="textColor">#1A1616</color>
+    <color name="linkedin_background">#137EB8</color>
 
 </resources>
