@@ -36,6 +36,7 @@ class MainActivity : AppCompatActivity() {
             } else {
                 var phone = "+91" + binding.userPhone.text.toString()
                 sendVerificationCode(phone)
+                Toast.makeText(this, "Please wait, we are sending otp", Toast.LENGTH_SHORT).show()
                 binding.signupBtn.visibility=View.VISIBLE
                 binding.phoneOtp.visibility=View.VISIBLE
             }

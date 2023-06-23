@@ -626,6 +626,31 @@ class FriendsChat : AppCompatActivity() {
                     }
                 return true
             }
+            R.id.video->{
+                var callId = System.currentTimeMillis().toString()
+                val room: HashMap<String, Any> = HashMap()
+                room["calledBy"] = usersUid
+                room["isAvailable"] = true
+                room["callId"] = callId
+                database2.child("Call").child(friendUid).child(usersUid).setValue(room)
+                    .addOnSuccessListener {
+                        if (friendsToken != null) {
+                            PushNotification(NotificationData("2", usersUid, usersUid + " is calling you..", friendUid, callId),
+                                friendsToken.toString()).also { sendNotification(it) }
+                        } else {
+                            friendsToken()
+                        }
+                        var intent = Intent(this, CallActivity::class.java)
+                        intent.putExtra("ClgUid", clgUid)
+                        intent.putExtra("UsersUid", usersUid)
+                        intent.putExtra("FriendUid", friendUid)
+                        intent.putExtra("CalledBy", usersUid)
+                        intent.putExtra("CallId", callId)
+                        startActivity(intent)
+
+                    }
+                return true
+            }
 //            R.id.mediaBox -> {
 //                var intent = Intent(this, SharedFilesActivity::class.java)
 //                intent.putExtra("ClgUid", clgUid)

@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:background="?attr/backgroundColor"
     android:layout_height="match_parent"
-    tools:context=".Activities.FormCollege">
+    tools:context=".Activities.FormGroup">
     <androidx.cardview.widget.CardView
         android:id="@+id/cardView"
         android:layout_width="wrap_content"
@@ -29,6 +29,21 @@
             android:layout_gravity="center|center_horizontal"
             android:orientation="vertical">
 
+
+            <EditText
+                android:id="@+id/enterClgUid"
+                android:layout_width="309dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="25dp"
+                android:background="@drawable/border"
+                android:drawableStart="@drawable/use"
+                android:drawablePadding="10dp"
+                android:ems="10"
+                android:hint="Enter your College Id here.."
+                android:inputType="textPersonName"
+                android:paddingStart="10dp"
+                tools:ignore="RtlSymmetry" />
             <EditText
                 android:id="@+id/clgUid"
                 android:layout_width="309dp"
@@ -39,7 +54,7 @@
                 android:drawableStart="@drawable/use"
                 android:drawablePadding="10dp"
                 android:ems="10"
-                android:hint="New College Uid"
+                android:hint="New Group Id"
                 android:inputType="textPersonName"
                 android:paddingStart="10dp"
                 tools:ignore="RtlSymmetry" />
@@ -53,7 +68,7 @@
                 android:drawableStart="@drawable/use"
                 android:drawablePadding="10dp"
                 android:ems="10"
-                android:hint="New College Name"
+                android:hint="New Group Name"
                 android:layout_marginBottom="15dp"
                 android:inputType="textPersonName"
                 android:paddingStart="10dp"
@@ -73,7 +88,7 @@
         android:clickable="true"
         android:elevation="50dp"
         android:scaleType="fitCenter"
-        android:src="@drawable/college"
+        android:src="@drawable/group"
         app:layout_constraintBottom_toTopOf="@+id/cardView"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -96,6 +111,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/cardView" />
+
     <ImageView
         android:id="@+id/selectedPostBtn"
         android:layout_width="wrap_content"

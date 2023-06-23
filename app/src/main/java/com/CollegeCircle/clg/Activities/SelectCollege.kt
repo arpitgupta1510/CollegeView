@@ -112,6 +112,11 @@ class SelectCollege : AppCompatActivity() {
                 startActivity(intent)
                 return true
             }
+            R.id.addGroup -> {
+                var intent = Intent(this, FormGroup::class.java)
+                startActivity(intent)
+                return true
+            }
 
             else -> super.onOptionsItemSelected(item)
         }

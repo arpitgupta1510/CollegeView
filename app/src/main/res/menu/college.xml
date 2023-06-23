@@ -3,4 +3,7 @@
     <item
         android:id="@+id/addCollege"
         android:title="Add New College" />
+    <item
+        android:id="@+id/addGroup"
+        android:title="Add New Group" />
 </menu>

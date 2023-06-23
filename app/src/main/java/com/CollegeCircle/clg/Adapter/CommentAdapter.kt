@@ -36,7 +36,7 @@ class CommentAdapter(
         var comment = commentList[position]
 
         holder.itemView.apply {
-            holder.itemView.commentUploaderName.setText(comment.uploadedBy)
+
             holder.itemView.uploadedComment.setText(comment.comment)
             var time1 = System.currentTimeMillis() / 86400000
             var time2 = comment.time.toString().toLong() / 86400000
@@ -75,10 +75,9 @@ class CommentAdapter(
                                 .circleCrop()
                                 .placeholder(R.drawable.user)
                                 .into(holder.itemView.commentUploaderImage)
+                            holder.itemView.commentUploaderName.setText(image.name)
                         }
-
                     }
-
                     override fun onCancelled(error: DatabaseError) {
                         TODO("Not yet implemented")
                     }
