@@ -8,7 +8,7 @@
         <item name="android:textColorPrimary">@color/white</item>
         <item name="android:textColor">@color/white</item>
         <item name="backgroundColor">@color/ltBlack</item>
-        <item name="background">@drawable/backgroundwp</item>
+        <item name="background">@drawable/background</item>
         <!-- Secondary brand color. -->
         <item name="colorSecondary">#6D8DA6</item>
         <item name="colorSecondaryVariant">@color/grey</item>

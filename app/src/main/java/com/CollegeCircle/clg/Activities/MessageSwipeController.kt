@@ -36,7 +36,7 @@ class MessageSwipeController(private val context: Context, private val swipeCont
     override fun getMovementFlags(recyclerView: RecyclerView, viewHolder: RecyclerView.ViewHolder): Int {
         mView = viewHolder.itemView
         imageDrawable = context.getDrawable(R.drawable.ic_reply_black_24dp)!!
-        shareRound = context.getDrawable(R.drawable.backgroundwp)!!
+        shareRound = context.getDrawable(R.drawable.background)!!
         return ItemTouchHelper.Callback.makeMovementFlags(ACTION_STATE_IDLE, RIGHT)
     }
 
